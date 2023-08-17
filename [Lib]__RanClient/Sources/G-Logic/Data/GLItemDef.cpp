@@ -273,7 +273,8 @@ namespace COMMENT
 		"투척",			//	9
 		"타입검사안함",	//	10
 	};
-
+	
+	/*
 	std::string ITEMADDON[EMADD_SIZE] =
 	{
 		"없음",
@@ -298,7 +299,34 @@ namespace COMMENT
 		"사격치",
 		"기력치",
 	};
+	*/
+	
+	std::string ITEMADDON[EMADD_SIZE] =
+	{
+		"None",
+		"Hit Rate",
+		"Evasion Rate",
 
+		"Damage",
+		"Defense",
+
+		"Hit Point",
+		"Mana",
+		"Stamina",
+
+		"STATS force",
+		"Stats stats",
+		"STATS Energy",
+		"STATS Dexirity",
+		"STATS Intelligence",
+		"STATS Strength",
+
+		"Meele",
+		"Shooting",
+		"Energy",
+	};
+	
+	/*
 	std::string ITEMVAR[EMVAR_SIZE] =
 	{
 		"없음",
@@ -315,6 +343,25 @@ namespace COMMENT
 		"MP 증가량",
 		"SP 증가량",
 		"HP+MP+SP 증가량"
+	};
+	*/
+	
+	std::string ITEMVAR[EMVAR_SIZE] =
+	{
+		"None",
+		"HP increase rate",
+		"MP increase rate",
+		"SP increase rate",
+		"HP+MP+SP increase rate"
+	};
+
+	std::string ITEMVOL[EMVAR_SIZE] = // by Kyungdae
+	{
+		"None",
+		"HP increase amount",
+		"MP increase amount",
+		"SP increase amount",
+		"HP+MP+SP increase amount"
 	};
 
 	std::string ITEM_QUE_TYPE[QUESTION_SIZE] =
@@ -334,7 +381,8 @@ namespace COMMENT
 		"Attack Up Max",
 		"Heal",
 	};
-
+	
+	/*
 	std::string ITEM_QUE_VAR1[QUESTION_SIZE] =
 	{
 		"없음",
@@ -371,6 +419,44 @@ namespace COMMENT
 		"없음",
 		"없음"
 	};
+	*/
+	
+	std::string ITEM_QUE_VAR1[QUESTION_SIZE] =
+	{
+		"None",
+		"speed",
+		"speed",
+		"Damage",
+		"Experience",
+		"None",
+		"incidence rate",
+		"Damage",
+		"MID",
+
+		"speed",
+		"speed",
+		"Damage",
+
+		"hp"
+	};
+
+	std::string ITEM_QUE_VAR2[QUESTION_SIZE] =
+	{
+		"None",
+		"None",
+		"attack speed",
+		"None",
+		"None",
+		"None",
+		"None",
+		"None",
+		"SID",
+
+		"None",
+		"attack speed",
+		"None",
+		"None"
+	};
 
 	float ITEMVAR_SCALE[EMVAR_SIZE] =
 	{
@@ -386,6 +472,7 @@ namespace COMMENT
 		return ITEMVAR_SCALE[emITEM_VAR]==100.0f;
 	};
 
+	/*
 	std::string GRINDING_TYPE[EMGRINDING_NSIZE] =
 	{
 		"없음",
@@ -414,6 +501,37 @@ namespace COMMENT
 		"전기",
 		"독",
 		"기",
+	};
+	*/
+	
+	std::string GRINDING_TYPE[EMGRINDING_NSIZE] =
+	{
+		"None",
+
+		"offense power",
+		"Defense",
+
+		"Resistance (Fire)",
+		"Resistance (Ice)",
+		"Resistance (Electric)",
+		"Resistance (Poison)",
+		"Resistance (Energy)",
+	};
+
+	std::string GRINDING_LEVEL[EMGRINDER_SIZE] =
+	{
+		"Common",
+		"Rare",
+		"Uncommon",
+	};
+
+	std::string GRINDING_RESIST[EMGRINDING_RS_NSIZE] =
+	{
+		"Fire",
+		"Ice",
+		"Electric",
+		"Poison",
+		"Energy",
 	};
 
 	std::string ITEM_RANDOM_OPT[EMR_OPT_SIZE] =
@@ -453,10 +571,18 @@ namespace COMMENT
 	};
 
 
+	/*
 	std::string COOLTYPE[EMCOOL_SIZE] =
 	{
 		"아이템타입",
 		"아이템MID/SID"
+	};
+	*/
+	
+	std::string COOLTYPE[EMCOOL_SIZE] =
+	{
+		"Item Type",
+		"Item MID/SID"
 	};
 };
 
