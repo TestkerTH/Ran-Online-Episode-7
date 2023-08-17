@@ -15,4 +15,4 @@
   unzip.c
   zip.c
   zutil.c
-  [Lib]__ZLib.vcxproj -> D:\Ran\Ran Online\[Lib]__ZLib\Bin\ZLib.lib
+  [Lib]__ZLib.vcxproj -> D:\Ran\Ran Online\Ran-Online-Episode-7\[Lib]__ZLib\Bin\ZLibD.lib

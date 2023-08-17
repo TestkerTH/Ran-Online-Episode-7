@@ -53,6 +53,7 @@ void CInventoryPageWear::CreateSubControl ( int nClassType )
 			"INVENTORY_WEAR_ITEM_IMAGE9",
 			"INVENTORY_WEAR_ITEM_IMAGE10",
 			"INVENTORY_WEAR_ITEM_IMAGE11",
+			"INVENTORY_WEAR_ITEM_IMAGE12",
 		};
 
 		CString strInvenWearOver[ITEM_IMAGE_SIZE] = 
@@ -69,6 +70,7 @@ void CInventoryPageWear::CreateSubControl ( int nClassType )
 			"INVENTORY_WEAR_OVER_IMAGE9",
 			"INVENTORY_WEAR_OVER_IMAGE10",
 			"INVENTORY_WEAR_OVER_IMAGE11",
+			"INVENTORY_WEAR_OVER_IMAGE12",
 		};
 
 		for ( int i = 0; i < ITEM_IMAGE_SIZE; i++ )
@@ -118,7 +120,8 @@ EMSLOT CInventoryPageWear::IMAGE2EMSLOT ( int nIndex )
 	case ITEM_IMAGE8:	return SLOT_RHAND;		//	오른손도구
 	case ITEM_IMAGE9:	return SLOT_FOOT;		//	신발
 	case ITEM_IMAGE10:	return SLOT_RFINGER;	//	오른손 손가락	
-	case ITEM_IMAGE11:	return SLOT_VEHICLE;	
+	case ITEM_IMAGE11:	return SLOT_VEHICLE;
+	case ITEM_IMAGE12:	return SLOT_WING;
 	}
 
 	GASSERT ( 0 && "범위를 벗어납니다." );
@@ -201,6 +204,7 @@ void CInventoryPageWear::TranslateUIMessage ( UIGUID ControlID, DWORD dwMsg )
 	case ITEM_IMAGE9:
 	case ITEM_IMAGE10:
 	case ITEM_IMAGE11:
+	case ITEM_IMAGE12:
 		{
 			if ( CHECK_MOUSE_IN ( dwMsg ) )
 			{

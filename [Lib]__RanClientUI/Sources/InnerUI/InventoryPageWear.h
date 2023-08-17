@@ -30,8 +30,9 @@ private:
 		ITEM_IMAGE9,
 		ITEM_IMAGE10,
 		ITEM_IMAGE11,
+		ITEM_IMAGE12,
 
-		ITEM_IMAGE_SIZE = 12,
+		ITEM_IMAGE_SIZE = 13,
 	};
 
 public:
